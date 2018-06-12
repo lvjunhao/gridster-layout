@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grideDemo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.gridster.css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.gridster.js"></script>
+    <script src="js/echarts.min.js"></script>
+
+    <script type="text/javascript">
+        var dataPage = {
+            "status": null,
+            "width": "3000",
+            "rowsnum": "60",
+            "id": "girdster_demo",
+            // 每个li模块
+            "pieces": [{
+                "id": "mp1440835974118",
+                "base_page_id": "syxcb_jgtg",
+                "title": "图表实例",
+                "layout": {
+                    "col": 1,
+                    "row": 4,
+                    "size_x": 20,
+                    "size_y": 16
+                }
+            }, {
+                "id": "mp1440836023258",
+                "base_page_id": "syxcb_map_test",
+                "title": "图标测试",
+                "layout": {
+                    "col": 21,
+                    "row": 10,
+                    "size_x": 20,
+                    "size_y": 45
+                }
+            }, {
+                "id": "mp1440836096733",
+                "base_page_id": "syxcb_jgmyx",
+                "title": "加贸保税",
+                "layout": {
+                    "col": 1,
+                    "row": 44,
+                    "size_x": 20,
+                    "size_y": 21
+                }
+            }, {
+                "id": "mp1441359577446",
+                "base_page_id": "syxcb_jsaj",
+                "title": "打击走私",
+                "layout": {
+                    "col": 41,
+                    "row": 23,
+                    "size_x": 20,
+                    "size_y": 18
+                }
+            }, {
+                "id": "mp1446446079417",
+                "base_page_id": "syxcb_gszg_test",
+                "title": "关税征管",
+                "layout": {
+                    "col": 1,
+                    "row": 23,
+                    "size_x": 20,
+                    "size_y": 18
+                }
+            }, {
+                "id": "mp1446451965076",
+                "base_page_id": "syxcb_tjfx",
+                "title": "统计分析",
+                "layout": {
+                    "col": 41,
+                    "row": 4,
+                    "size_x": 20,
+                    "size_y": 16
+                }
+            }, {
+                "id": "mp1450428093057",
+                "base_page_id": "syxcb_fxgl_test",
+                "title": "跨境电商",
+                "layout": {
+                    "col": 41,
+                    "row": 44,
+                    "size_x": 20,
+                    "size_y": 21
+                }
+            }, {
+                "id": "mp1450691197883",
+                "base_page_id": "util_title_row1",
+                "title": "图表样张",
+                "layout": {
+                    "col": 21,
+                    "row": 1,
+                    "size_x": 20,
+                    "size_y": 5
+                }
+            }, {
+                "id": "mp1450692468359",
+                "base_page_id": "util_title_metapage",
+                "title": "监管通关",
+                "layout": {
+                    "col": 1,
+                    "row": 1,
+                    "size_x": 20,
+                    "size_y": 3
+                }
+            }, {
+                "id": "mp1450694235729",
+                "base_page_id": "util_title_metapage",
+                "title": "关税征管",
+                "layout": {
+                    "col": 1,
+                    "row": 20,
+                    "size_x": 20,
+                    "size_y": 3
+                }
+            }, {
+                "id": "mp1450694435136",
+                "base_page_id": "util_title_metapage",
+                "title": "加贸保税",
+                "layout": {
+                    "col": 1,
+                    "row": 41,
+                    "size_x": 20,
+                    "size_y": 3
+                }
+            }, {
+                "id": "mp1450694558975",
+                "base_page_id": "util_title_metapage",
+                "title": "打击走私",
+                "layout": {
+                    "col": 41,
+                    "row": 20,
+                    "size_x": 20,
+                    "size_y": 3
+                }
+            }, {
+                "id": "mp1450694563698",
+                "base_page_id": "util_title_metapage",
+                "title": "统计分析",
+                "layout": {
+                    "col": 41,
+                    "row": 1,
+                    "size_x": 20,
+                    "size_y": 3
+                }
+            }, {
+                "id": "mp1450946519379",
+                "base_page_id": "util_title_metapage",
+                "title": "跨境电商",
+                "layout": {
+                    "col": 41,
+                    "row": 41,
+                    "size_x": 20,
+                    "size_y": 3
+                }
+            }, {
+                "id": "mp1456381111687",
+                "base_page_id": "syzxb_util_wenzi",
+                "title": "text测试",
+                "layout": {
+                    "col": 21,
+                    "row": 55,
+                    "size_x": 20,
+                    "size_y": 10
+                }
+            }, {
+                "id": "mp1458206713056",
+                "base_page_id": "util_menu_qjx",
+                "title": "随便起个标题",
+                "layout": {
+                    "col": 1,
+                    "row": 65,
+                    "size_x": 60,
+                    "size_y": 18
+                }
+            }, {
+                "id": "mp1461228473781",
+                "base_page_id": "sjxs_bgt",
+                "title": "我是测试用的",
+                "layout": {
+                    "col": 21,
+                    "row": 6,
+                    "size_x": 20,
+                    "size_y": 4
+                }
+            }],
+            "title": "grideDemo",
+            "height": "1000",
+            "colsnum": "63",
+        } || {};
+        var gridster;
+        var gridsterWidth = (dataPage['rowsnum'] == "0" || !dataPage['rowsnum']) ? 12 : dataPage['rowsnum']; //列数
+        var gridsterHeight = (dataPage['colsnum'] == "0" || !dataPage['colsnum']) ? 12 : dataPage['colsnum']; //行数
+        var widgetMargins = dataPage['compontinterval'] || 0;
+
+        function initLayout() { //初始化页面布局
+            //var w = $(window).width();
+            var h = 1000; //Math.max($(window).height(), 1000);
+            var w = $("#box-1").width(); //ul父级div的总宽     不需要指定，根据bootstrap栅格布局确定
+
+            var offsetH = 0; //gridsterHeight*4;
+            // 计算每行的高度 为了不丢失精度,先扩大100倍向下取整
+            var itemColHeight = Math.floor(100 * (h - offsetH) / gridsterHeight) / 100; // 15.87
+            //var itemColHeight = Math.floor((h-30)/12-10);
+
+            var offsetW = 1; //gridsterWidth*4;	//不能设为0，设为0则有反弹bug
+            // 计算每行的宽度
+            var itemColWidth = Math.floor(100 * (w - offsetW) / gridsterWidth) / 100; // 24.8
+
+            // 创建grister 实例 为class为gridster的元素下的ul
+            gridster = $(".gridster ul").gridster({
+                widget_margins: [widgetMargins, widgetMargins], // 模块之间的间距
+                widget_base_dimensions: [itemColWidth, itemColHeight], // 模块的初始宽高
+                max_cols: gridsterWidth, // 模块最大行数
+                //autogrow_cols: true,
+                helper: 'clone',
+                resize: {
+                    // 鼠标开始拖动改变大小
+                    start: function (e, ui, $widget) {
+
+                    },
+                    // 大小一旦改变执行的函数
+                    resize: function (e, ui, $widget) {
+                        var tmpLiId = $widget[0].id;
+                        var liW = $("#" + tmpLiId).width();
+                        var liH = $("#" + tmpLiId).height();
+                        $("#" + tmpLiId).find(".chartbox").css({
+                            "width": liW,
+                            "height": liH
+                        })
+                        var tmpId = $widget[0].id.substring(7);
+                        var mychart = echarts.init(document.getElementById(tmpId));
+                        mychart.resize();
+
+                    },
+                    // 停止改变大小(释放鼠标)执行的函数
+                    stop: function (e, ui, $widget) {
+
+                    },
+                    min_size:[8,6],// 允许缩放的最小比例
+                    enabled: true //默认false,true为可缩放
+                },
+                //拖动相关回调函数
+                draggable: {
+                    // 拖动开始
+                    start: function (event, ui) {
+
+                    },
+                    // 拖动移动
+                    drag: function (event, ui) {
+
+                    },
+                    // 拖动结束
+                    stop: function (event, ui) {
+
+                    }
+                }
+            }).data('gridster');
+
+            //gridster.disable( );		
+        }
+
+        function AddWidget() { //添加组件
+        	var myDate = new Date();
+        	var bid = 'mp' + Math.round(Math.random() * 10000 + myDate.getTime(), 1);
+        	var bean = {
+        		id : bid,
+        		row : 1,
+        		col : 1,
+        		size_x : 20,
+        		size_y : 16,
+        	};
+
+        	var o = $("<li></li>");
+        	o.attr("id", "widget-" + bean['id']);
+        	for (var j in bean) {
+        		o.attr("data-" + j, bean[j]);
+        	}
+
+        	var div;
+            var echartsDiv = $("<div class='chartbox' id=" + bean['id'] + "></div>");
+            var delDiv = $("<span class='glyphicon  redDel' aria-hidden='true' onclick='doRemovePiece(this);' pid='" + bean['id'] + "'>X</span>");
+        	div = $("<div class='blueBorder'></div>");
+        	
+        	o.append(div);
+            div.append(echartsDiv);
+            div.append(delDiv)
+        	gridster.add_widget(o.get(0), bean['size_x'], bean['size_y'], bean['col'], bean['row']);
+        }
+
+        //初始化页面数据
+        function initDatas() { 
+            var box = $("#box-2");
+            var items = dataPage['pieces'] || {};
+            for (var i = 0; i < items.length; i++) {
+                var bean = items[i] || {};
+                var layout = bean['layout'] || {};
+                var o = $("<li></li>");
+                o.attr("id", "widget-" + bean['id']);
+                o.attr("data-row", layout["row"]);
+                o.attr("data-col", layout["col"]);
+                o.attr("data-sizex", layout["size_x"]);
+                o.attr("data-sizey", layout["size_y"]);
+                var div;
+                var echartsDiv = $("<div class='chartbox' id=" + bean['id'] + "></div>");
+                var delDiv = $("<span class='glyphicon  redDel' aria-hidden='true' onclick='doRemovePiece(this);' pid='" + bean['id'] + "'>X</span>");
+                div = $("<div class='blueBorder'></div>");
+                box.append(o);
+                o.append(div);
+                div.append(echartsDiv);
+                div.append(delDiv)
+
+            }
+        }
+
+        //删除页面模块
+        function doRemovePiece(btn) {
+            var obj = $(btn);
+            var pid = (obj.attr("pid"));
+            var pobj = document.getElementById("widget-" + pid);
+
+            gridster.remove_widget(pobj);
+        }
+
+        //保存布局信息
+        function Save() { 
+            var layouts = gridster.serialize();
+            //alert(s.length);
+            var pieceItems = $("li", "#box-2");
+            var pieceJsons = [];
+            pieceItems.each(function (index, item) {
+                var $el = $(item);
+                var bean = {};
+                bean['layout'] = layouts[index];
+                pieceJsons.push(bean);
+            });
+
+            var bean = {};
+            bean['id'] = dataPage['id'];
+            bean['pieces'] = pieceJsons;
+
+            alert(JSON.stringify(bean))
+            /*	// 发送ajax数据
+            	var txt = JSON.stringify(bean);
+            	var url = '';
+            	$.post(url, {txt: txt}, function(data) {
+            		var flag = "" + data;
+            		if (flag == "1") {
+            			//alert("保存成功");
+            			$.bootstrapGrowl("保存成功，请立即刷新本页面方可正常显示……", {
+            				type : 'success',
+            				delay : 1000,
+            				align: 'center'
+            			});
+            			//setTimeout(doRefresh, 500);
+            		} else {
+            			//alert("保存失败");
+            			$.bootstrapGrowl("保存失败", {
+            				type : 'danger',
+            				delay : 1000,
+            				align: 'center'
+            			});
+            		}
+            	});*/
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="row" style="margin: 0; padding: 0;">
+            <!-- 左侧占位 -->
+            <div class="col-md-1 no-padding">
+
+            </div>
+
+            <!-- 中间内容填充部分 -->
+            <div class="col-md-9 no-padding">
+                <div class="panel panel-default">
+                    <!-- 头部功能按钮 -->
+                    <div class="panel-heading" id="box-head">
+
+                        <form class="form-inline">
+                            <button class="btn btn-default" type="button" onclick="AddWidget()">增加视图</button>
+                            <button class="btn btn-default" type="button" onclick="Save()">保存页面</button>
+                        </form>
+
+                    </div>
+                    <!-- 头部功能按钮结束 -->
+
+                    <!-- 内容部分 -->
+                    <div class="panel-body">
+                        <div class="gridster" id='box-1'>
+                            <ul id='box-2'></ul>
+                        </div>
+                    </div>
+                    <!-- 内容部分结束 -->
+
+                </div>
+            </div>
+
+            <!-- 右侧占位 -->
+            <div class="col-md-2 no-padding">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            //初始化页面
+            initDatas();
+            initLayout();
+            var title = dataPage['title'];
+            var items = dataPage['pieces'] || {};
+            var bean,layout;
+            var dataNum = [];
+            $("#box-2").find("li").each(function (index,item) {
+                var w = $(this).width();
+                var h = $(this).height();
+                $(this).find(".chartbox").css({
+                    "width": w,
+                    "height": h
+                });
+                var liId = $(this).find(".chartbox").attr("id");
+                bean = items[index] || {};
+                layout = bean['layout'] || {};
+                dataNum = [layout['row'],layout['col'],layout['size_x'],layout['size_y']];
+                var option = {
+                    title: {
+                        text: title
+                    },
+                    tooltip: {},
+                    lengend: {
+                        data: ['数据']
+                    },
+                    xAxis: [{
+                        name: '类别',
+                        type: 'category',
+                    }],
+                    yAxis: {},
+                    series: [{
+                        name: '数据',
+                        type: 'bar',
+                        data: dataNum
+                    },]
+                };
+
+                var mychart = echarts.init(document.getElementById(liId));
+                mychart.setOption(option);
+                $(window).resize(function () {
+                    mychart.resize();
+                })
+            })
+
+        });
+    </script>
+</body>
+
+</html>
